@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert - ShoppingCart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imges/aleert.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5321d8dea9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="icon">
+  <a href="http://127.0.0.1:5500/Collection.html"><i class="fa-solid fa-arrow-left"></i></a>
+  </div>
+
+  <div class="TitleOfShoppingCart">
+    <h1>CheckOut ...</h1>
+  </div>
+  <div class="CardDetials">
+    <div class="titleCardDetails">
+      <h4>Card Details</h4>
+    </div>
+    <div class="imgConteiner">
+      <img src="imges/Credit Card.png" alt="">
+    </div>
+    <form action="">
+      <!-- <label id="NameContainer" for="Name">Name: </label>
+      <input type="text" id="Name" placeholder="First Name and Last Name" required>
+      <label for="Date">Date of Expire</label>
+      <input type="date" id="Date" required>
+      <label for="CardNumber">Card Number</label>
+      <input type="number" id="CardNumber" placeholder="1234 5678 9012 3456" required>
+      <label for="CVV">CVV</label>  
+      <input type="number" id="CVV" placeholder="123" required>
+      <button>Buy Now</button> -->
+      <label id="NameContainer" for="Name">Name: </label>
+<input type="text" id="Name" placeholder="First Name and Last Name" required>
+
+<label for="Date">Date of Expire</label>
+<input type="date" id="Date" min="2020-01-01" max="2030-12-31" required>
+
+<label for="CardNumber">Card Number</label>
+<input type="text" id="CardNumber" placeholder="1234 5678 9012 3456" pattern="\d{4} ?\d{4} ?\d{4} ?\d{4}" maxlength="16" required>
+
+<label for="CVV">CVV</label>  
+<input type="text" id="CVV" placeholder="1234" pattern="\d{4}" maxlength="4" required>
+
+<button id="buyNow">Buy Now</button>
+    </form>
+  </div>
+  <div id="cartContainer"></div>
+
+  
+  <script src="Checkout.js">
+   
+  </script>
+</body>
+</html>
